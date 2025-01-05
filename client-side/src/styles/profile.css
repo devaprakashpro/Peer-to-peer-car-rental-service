@@ -1,0 +1,38 @@
+.brand__name__profile{
+    font-size: 90px;
+    font-weight: 900;   
+    letter-spacing: -0.4rem;
+    color: black !important;
+    padding: 0 23px;
+    margin-top: -70px !important;
+}
+
+.signup__form__profile{
+    height: 350px !important;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(98, 146, 168, 0.918) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    border-radius: 10px;
+    color: #ffff;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0 30px;
+}
+
+.welcome__text__profile{
+    color: #ddd;
+    font-size: 30px;
+    font-weight: 100;
+    margin-top: 20px;
+    text-align: center;
+}
+.profile__sessiondata{
+    color: black !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+}

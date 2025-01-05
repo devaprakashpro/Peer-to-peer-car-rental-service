@@ -1,0 +1,42 @@
+.admin__page{
+    height: 400px;
+}
+
+.admin__layout{
+    display: grid;
+    grid-template-rows: 0.5fr 3.5fr;
+    grid-column-gap: 0px;
+    height: inherit;
+}
+
+.left__admin{
+    width: 100%;
+    height: 70px;
+    background-color: #ddd;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+.left__admin a {
+    color: #000d6b;
+    font-weight: 100;
+    font-size: 0.2rem;
+    text-decoration: none;
+    margin: 10px 0 ;
+}
+
+.right__admin{
+    margin: 35px;
+}
+
+.admin__data{
+    font-size: 10px;
+    font-weight: 100;
+}

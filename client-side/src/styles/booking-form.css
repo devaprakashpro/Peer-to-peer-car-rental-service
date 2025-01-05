@@ -1,0 +1,97 @@
+.booking__form {
+    width: 47.5%;
+  }
+  
+  .booking__form input {
+    padding: 8px 15px;
+    border: 1px solid #7c8a972a;
+    color: #7c8a97;
+    width: 100%;
+  }
+  
+  .booking__form select,
+  .textarea {
+    width: 100%;
+    padding: 10px 15px;
+    color: #7c8a97;
+    border: 1px solid #7c8a972a;
+    border-radius: 4px;
+  }
+  
+  .textarea__tutor{
+    width: 555px;
+    margin: -13px;
+    padding: 10px 15px;
+    color: #7c8a97;
+    border-radius: 4px;
+  }
+
+  .textarea{
+    width: 97%;
+  }
+  .time__picker::before {
+    content: "Journey Time";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+
+  .time__picker__tutor::before {
+    content: "Session Time";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+
+  .date__picker__tutor::before {
+    content: "First Session Date";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+
+  .time__picker__earn::before {
+    content: "Available From";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+
+  .time__picker__join::before {
+    content: "Interview Time";
+    color: #7c8a97;
+    margin-right: 0.5rem;
+  }
+
+  .upload__image__earn::before {
+    content: "Upload car image";
+    color: #7c8a97;
+    margin-right: 5rem;
+  }
+
+  .upload__image__tutor::before {
+    content: "Upload your image";
+    color: #7c8a97;
+    margin-right: 5rem;
+  }
+
+  .upload__image__doc1::before {
+    content: "Upload License Document";
+    color: #7c8a97;
+    margin-right: 5rem;
+  }
+  
+  .textarea:focus,
+  .booking__form input:focus,
+  .booking__form select:focus {
+    outline: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .booking__form {
+      width: 100%;
+    }
+  
+    .booking__form input,
+    .textarea,
+    .booking__form select {
+      font-size: 0.8rem;
+    }
+  }
+  
