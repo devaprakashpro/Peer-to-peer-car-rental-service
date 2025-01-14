@@ -20,12 +20,12 @@ const BlogDetails = () => {
         <Container>
           <Row>
           <Col lg="8" md="8">
-              <div className="blog__details">
+              <div className="car__details">
                 <img src={blog.imgUrl} alt="" className="w-100" />
                 <h2 className="section__title mt-4">{blog.title}</h2>
 
-                <div className="blog__publisher d-flex align-items-center gap-4 mb-4">
-                  <span className="blog__author">
+                <div className="car__publisher d-flex align-items-center gap-4 mb-4">
+                  <span className="car__author">
                     <i class="ri-user-line"></i> {blog.author}
                   </span>
 
@@ -49,26 +49,24 @@ const BlogDetails = () => {
                 <h4 className="mb-5">3 Comments</h4>
 
                 <div className="single__comment d-flex gap-3">
-                  <img src={commentImg} alt="" />
+                  <img src={commentImg} alt="User Avatar" />
                   <div className="comment__content">
-                    <h6 className=" fw-bold">David Visa</h6>
-                    <p className="section__description mb-0">14 July, 2022</p>
+                    <h6 className="fw-bold">John Doe</h6>
+                    <p className="section__description mb-0">20 October, 2023</p>
                     <p className="section__description">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Eos nobis totam eius laborum molestias itaque minima
-                      distinctio, quae velit tempore!
+                      This is a sample comment to demonstrate how the comment section looks after the modification.
                     </p>
 
-                    <span className="replay d-flex align-items-center gap-1">
-                      <i class="ri-reply-line"></i> Replay
+                    <span className="reply d-flex align-items-center gap-1">
+                      <i className="ri-reply-line"></i> Reply
                     </span>
                   </div>
                 </div>
                  {/* =============== comment form ============ */}
-                  <div className="leave__comment-form mt-5">
+                <div className="leave__comment-form mt-5">
                   <h4>Leave a Comment</h4>
                   <p className="section__description">
-                    You must sign-in to make or comment a post
+                    You must sign-in to leave a comment
                   </p>
                   <Form>
                     <FormGroup className=" d-flex gap-3">
@@ -101,7 +99,7 @@ const BlogDetails = () => {
                   <div className="recent__blog-item d-flex gap-3">
                     <img src={item.imgUrl} alt="" className="w-25 rounded-2" />
                     <h6>
-                      <Link to={`/blogs/${item.title}`}>{blog.title}</Link>
+                      <Link to={`/blogs/${item.title}`}>{item.title}</Link>
                     </h6>
                   </div>
                 </div>

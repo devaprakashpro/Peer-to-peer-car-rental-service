@@ -220,43 +220,43 @@ const submitCarReservationHandler = useCallback(async (event) => {
       <>
         <Form onSubmit={submitCarReservationHandler}>
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="text" required placeholder="Name" name="name"/>
+          <input type="text" required placeholder="Enter Your Full Name" name="name"/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="text" required placeholder="Your Address" name="address"/>
+          <input type="text" required placeholder="Enter Your Address" name="address"/>
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="email" required placeholder="Email" name="email" />
+          <input type="email" required placeholder="Enter Your Email" name="email" />
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="tel" required placeholder="Phone Number" name="phone"/>
+          <input type="tel" required placeholder="Enter Your Phone Number" name="phone"/>
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="text" required placeholder="Pickup Location" name="pickup_location" />
+          <input type="text" required placeholder="Enter Pickup Location" name="pickup_location" />
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="text" required placeholder="Return Location" name="return_location" />
+          <input type="text" required placeholder="Enter Return Location" name="return_location" />
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="date" required placeholder="Journey Date" name="journey_date"/>
+          <input type="date" required placeholder="Select Journey Date" name="journey_date"/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
           <input
             type="text"
-            required placeholder="Renting Duration"
+            required placeholder="Enter Renting Duration"
             name="renting_period"
           />
         </FormGroup>
 
         <FormGroup className="booking__form textarea__tutor">
             <select name="payment_method" id="">
-            <option value="cash">Cash</option>
-            <option value="direct bank transfer">Direct Bank Transfer</option>
+            <option value="cash">Cash/QR</option>
+            {/* <option value="direct bank transfer">Direct Bank Transfer</option>
               <option value="mastercard">Master Card</option>
-              <option value="paypal">PayPal</option>
+              <option value="paypal">PayPal</option> */}
             </select>
         </FormGroup>
 
@@ -265,7 +265,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
             rows={5}
             type="textarea"
             className="textarea"
-            required placeholder="Write"
+            required placeholder="Enter Additional Details"
             name="details"
           ></textarea>
         </FormGroup>
@@ -279,25 +279,25 @@ const submitCarReservationHandler = useCallback(async (event) => {
            <>
              <Form onSubmit={submitTutorReservationHandler}>
              <FormGroup className="booking__form d-inline-block me-4 mb-4">
-               <input type="text" required placeholder="Name" name="name"/>
+               <input type="text" required placeholder="Enter Your Full Name" name="name"/>
              </FormGroup>
      
              <FormGroup className="booking__form d-inline-block mb-4">
-               <input type="email" required placeholder="Email" name="email" />
+               <input type="email" required placeholder="Enter Your Email" name="email" />
              </FormGroup>
 
              <FormGroup className="booking__form d-inline-block me-4 mb-4">
-               <input type="tel" required placeholder="Phone Number" name="phone"/>
+               <input type="tel" required placeholder="Enter Your Phone Number" name="phone"/>
              </FormGroup>
      
              <FormGroup className="booking__form d-inline-block mb-4">
-               <input type="date" required placeholder="Start Date" name="start_date" className="date__picker__tutor"/>
+               <input type="date" required placeholder="Select Start Date" name="start_date" className="date__picker__tutor"/>
              </FormGroup>
 
              <FormGroup className="booking__form d-inline-block me-4 mb-4">
                <input
                  type="time"
-                 required placeholder="Time"
+                 required placeholder="Select Session Time"
                  className="time__picker__tutor"
                  name="session_time"
                />
@@ -325,7 +325,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
                  rows={5}
                  type="textarea"
                  className="textarea"
-                 required placeholder="Write"
+                 required placeholder="Enter Additional Details"
                  name="details"
                ></textarea>
              </FormGroup>
@@ -339,35 +339,35 @@ const submitCarReservationHandler = useCallback(async (event) => {
             <div>
               <Form onSubmit={submitCarHandler}>
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="Name" name="name"/>
+              <input type="text" required placeholder="Enter Your Full Name" name="name"/>
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block mb-4">
-              <input type="tel" required placeholder="Phone Number" name="phone" />
+              <input type="tel" required placeholder="Enter Your Phone Number" name="phone" />
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="License Plate" name="license_plate"/>
+              <input type="text" required placeholder="Enter License Plate" name="license_plate"/>
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block mb-4">
-              <input type="text" required placeholder="Pickup Location" name="from_address"/>
+              <input type="text" required placeholder="Enter Pickup Location" name="from_address"/>
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="number" required placeholder="Speed Per Hour" name="hour_speed" />
+              <input type="number" required placeholder="Enter Speed Per Hour" name="hour_speed" />
             </FormGroup>
             
             <FormGroup className="booking__form d-inline-block mb-4">
-              <input type="text" required placeholder="Car Year" name="year" />
+              <input type="text" required placeholder="Enter Car Year" name="year" />
             </FormGroup>    
 
           <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="Car Model" name="model"  />
+              <input type="text" required placeholder="Enter Car Model" name="model"  />
             </FormGroup>
 
             <FormGroup className="booking__form  d-inline-block mb-4">
-              <input type="file" required placeholder="Upload you car image" name= "car_image" className="upload__image__earn" />
+              <input type="file" required placeholder="Upload Car Image" name= "car_image" className="upload__image__earn" />
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
@@ -391,7 +391,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
             <FormGroup className="booking__form d-inline-block mb-4">
               <input
                 type="number"
-                required placeholder="Price Per Hour"
+                required placeholder="Enter Price Per Hour"
                 name="hour_price"
               />
             </FormGroup>
@@ -401,7 +401,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
                 rows={5}
                 type="textarea"
                 className="textarea"
-                required placeholder="Additional Details..."
+                required placeholder="Enter Additional Details"
                 name="details"
               ></textarea>
             </FormGroup>
@@ -419,66 +419,66 @@ const submitCarReservationHandler = useCallback(async (event) => {
           <div>
             <Form onSubmit={submitTutorHandler}>
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
-                <input type="text" required placeholder="First Name"name="first_name" />
+                <input type="text" required placeholder="Enter First Name" name="first_name" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block mb-4">
-                <input type="text" required placeholder="Last Name" name="last_name"  />
+                <input type="text" required placeholder="Enter Last Name" name="last_name"  />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
-                <input type="number" required placeholder="Your Age" name="age" />
+                <input type="number" required placeholder="Enter Your Age" name="age" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block mb-4">
-                <input type="text" required placeholder="Your Gender" name="gender" />
+                <input type="text" required placeholder="Enter Your Gender" name="gender" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
-                <input type="email" required placeholder="Email" name="email" />
+                <input type="email" required placeholder="Enter Your Email" name="email" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block mb-4">
-                <input type="tel" required placeholder="Phone Number" name="phone" />
+                <input type="tel" required placeholder="Enter Your Phone Number" name="phone" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
-                <input type="text" required placeholder="Your Address" name="address" />
+                <input type="text" required placeholder="Enter Your Address" name="address" />
               </FormGroup>
 
               <FormGroup className="booking__form  d-inline-block mb-4">
-                <input type="number" required placeholder="Years of Experience" name="experience_years" />
-              </FormGroup>
-
-              <FormGroup className="booking__form  d-inline-block me-4 mb-4">
-                <input type="file" required placeholder="Upload you car image" className="upload__image__tutor" name="driver_image" />
+                <input type="number" required placeholder="Enter Years of Experience" name="experience_years" />
               </FormGroup>
 
               <FormGroup className="booking__form  d-inline-block mb-4">
-                <input type="file" required placeholder="Upload you car image" className="upload__image__doc1" name="driver_license" />
+                <input type="file" required placeholder="Upload Driver Image" className="upload__image__tutor" name="driver_image" />
+              </FormGroup>
+
+              <FormGroup className="booking__form  d-inline-block mb-4">
+                <input type="file" required placeholder="Upload Driver License" className="upload__image__doc1" name="driver_license" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
                 <input
-                  type="time"
-                  required placeholder="Pickup Time"
+                  type="date"
+                  required placeholder="Select Interview Time"
                   className="time__picker__join"
                   name="interview_time"
                 />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block mb-4">
-                <input type="date" required placeholder="Pickup Date"name="interview_date" />
+                <input type="date" required placeholder="Select Interview Date" name="interview_date" />
               </FormGroup>
               
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
-                <input type="text" required placeholder="working Location" name="working_location" />
+                <input type="text" required placeholder="Enter Working Location" name="working_location" />
               </FormGroup>
 
               <FormGroup className="booking__form d-inline-block mb-4">
-                <select name="is_own_car" id="" placeholder="Have a car">
-                  <option value="">Have A car</option>
+                <select name="is_own_car" id="">
+                  <option value="">Do You Have A Car?</option>
                   <option value="true">Yes</option>
                   <option value="false">No</option>
                 </select>
@@ -489,7 +489,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
                   rows={5}
                   type="textarea"
                   className="textarea"
-                  required placeholder="Write a Brief About Yourself..."
+                  required placeholder="Write A Brief About Yourself"
                   name="bio"
                 ></textarea>
               </FormGroup>
@@ -507,15 +507,15 @@ const submitCarReservationHandler = useCallback(async (event) => {
             <Form onSubmit={submitTutorCarHandler}>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="Car Model" name="model" />
+              <input type="text" required placeholder="Enter Car Model" name="model" />
             </FormGroup>
 
             <FormGroup className="booking__form  d-inline-block mb-4">
-              <input type="file" required placeholder="Upload you car image" className="upload__image__earn" name= "car_image"/>
+              <input type="file" required placeholder="Upload Car Image" className="upload__image__earn" name= "car_image"/>
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="Car color" name="color" />
+              <input type="text" required placeholder="Enter Car Color" name="color" />
             </FormGroup>
             
             <FormGroup className="booking__form d-inline-block mb-4">
@@ -526,25 +526,25 @@ const submitCarReservationHandler = useCallback(async (event) => {
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-              <input type="text" required placeholder="License plate" name="license_plate" />
+              <input type="text" required placeholder="Enter License Plate" name="license_plate" />
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block mb-4">
               <input
                 type="text"
-                required placeholder="Year Model"
+                required placeholder="Enter Year Model"
                 name="year"
               />
             </FormGroup>
 
             <FormGroup className="booking__form d-inline-block me-4 mb-4">
-            <input type="number" required placeholder="Speed Per Hour" name="hour_speed" />
+            <input type="number" required placeholder="Enter Speed Per Hour" name="hour_speed" />
           </FormGroup>
 
             <FormGroup className="booking__form d-inline-block mb-4">
               <input
                 type="number"
-                required placeholder="price per hour"
+                required placeholder="Enter Price Per Hour"
                 name="hour_price"
               />
             </FormGroup>
@@ -554,7 +554,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
                 rows={5}
                 type="textarea"
                 className="textarea"
-                required placeholder="Additional Details..."
+                required placeholder="Enter Additional Details"
                 name="details"
               ></textarea>
             </FormGroup>

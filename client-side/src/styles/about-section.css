@@ -1,4 +1,5 @@
 .about__section-item {
+  flex-direction: column;
     column-gap: 3rem;
   }
   

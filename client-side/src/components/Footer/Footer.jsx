@@ -50,7 +50,7 @@ const Footer = () => {
     <footer className='footer'>
       <Container>
         <Row>
-          <Col lg="4" md="4" sm="12">
+          {/* <Col lg="4" md="4" sm="12">
             <div className="logo footer__logo">
               <h1>
                 <Link to="/home" className="d-flex align-items-center gap-2">
@@ -101,13 +101,12 @@ const Footer = () => {
                 <RiSendPlaneLine size={25} color='#ffff'/>
               </div>
             </div>
-          </Col>
+          </Col> */}
 
           <Col lg="12">
             <div className="footer__bottom">
               <p className="section__description d-flex align-items-center justify-content-center gap-1 pt-4">
-                <AiFillCopyrightCircle />Copyright {year}, Developed by
-                CarCoach. All rights reserved.
+                <AiFillCopyrightCircle />Copyright {new Date().getFullYear()}, All rights reserved. VeloRent.
               </p>
             </div>
           </Col>

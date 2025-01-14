@@ -1,83 +1,100 @@
 export const price = [
     {
-      plan: "Basic",
-      price: "1150",
-      ptext: "per user, per month",
+      plan: "Beginner",
+      price: "995",
+      ptext: "1 user, per month",
       list: [
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: " 5 driving lessons",
+          text: "5 lessons",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "Practice on major highways",
+          text: "Local roads & highways",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "Parking Practice",
+          text: "Parking & reverse",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "Practice How to Use Car Mirrors",
-        },
-        { change: "color", icon: <i class='fa-solid fa-x'></i>, text: "Personal Support" },
-        { change: "color", icon: <i class='fa-solid fa-x'></i>, text: "Assistance obtaining license" },
-      ],
-    },
-    {
-      best: "Best Value",
-      plan: "Premium",
-      price: "1900",
-      ptext: "per user, per month",
-      list: [
-        {
-          icon: <i class='fa-solid fa-check'></i>,
-          text: "9 Driving Sessions",
-        },
-        {
-          icon: <i class='fa-solid fa-check'></i>,
-          text: "Driving preparation.",
-        },
-        {
-          icon: <i class='fa-solid fa-check'></i>,
-          text: "Learn To Make a U-Turn",
-        },
-        {
-          icon: <i class='fa-solid fa-check'></i>,
-          text: "Limited Personal Support",
+          text: "Mirrors & signals",
         },
         {
           change: "color",
           icon: <i class='fa-solid fa-x'></i>,
-          text: "Assistance obtaining license", 
+          text: "No support",
+        },
+        {
+          change: "color",
+          icon: <i class='fa-solid fa-x'></i>,
+          text: "No license help",
         },
       ],
     },
     {
-      plan: "Super",
-      price: "2500",
-      ptext: "2 user, per month",
+      best: "Best Value",
+      plan: "Intermediate",
+      price: "1995",
+      ptext: "2 users, per month",
       list: [
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "13 driving lessons ",
+          text: "10 lessons",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "How to Change Lanes as expert",
+          text: "All roads & highways",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "Specialized driving tests",
+          text: "Night & rain",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "Specialized Personal assistance ",
+          text: "Hills & mountains",
         },
         {
           icon: <i class='fa-solid fa-check'></i>,
-          text: "assistance obtaining license",
+          text: "Personal support",
+        },
+        {
+          change: "color",
+          icon: <i class='fa-solid fa-x'></i>,
+          text: "No license help",
+        },
+      ],
+    },
+    {
+      plan: "Advanced",
+      price: "2995",
+      ptext: "3 users, per month",
+      list: [
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "15 lessons",
+        },
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "All roads & highways, day & night",
+        },
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "Heavy traffic & construction",
+        },
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "Different road surfaces & weather",
+        },
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "Personal support & test prep",
+        },
+        {
+          icon: <i class='fa-solid fa-check'></i>,
+          text: "License help",
         },
       ],
     },
   ]
+

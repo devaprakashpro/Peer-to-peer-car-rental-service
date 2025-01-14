@@ -1,38 +1,148 @@
-.brand__name__profile{
+/* Styling for the brand name */
+.brand__name__profile {
     font-size: 90px;
-    font-weight: 900;   
+    font-weight: 900;
     letter-spacing: -0.4rem;
     color: black !important;
     padding: 0 23px;
     margin-top: -70px !important;
 }
 
-.signup__form__profile{
-    height: 350px !important;
+/* Styling for the form container */
+.signup__form__profile {
+    height: auto;
+    /* Allow the form to expand based on content */
     display: flex;
     flex-direction: column;
-    background-color: rgba(98, 146, 168, 0.918) !important;
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    background: linear-gradient(145deg, rgba(98, 146, 168, 0.9), rgba(71, 114, 134, 0.9)) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
     backdrop-filter: blur(8.5px);
-    border-radius: 10px;
-    color: #ffff;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px;
+    color: #fff;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    margin: 0 30px;
 }
 
-.welcome__text__profile{
+/* Styling for the "Welcome Back" text */
+.welcome__text__profile {
     color: #ddd;
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 35px;
+    font-weight: 300;
     margin-top: 20px;
     text-align: center;
 }
-.profile__sessiondata{
+
+/* Styling for session data */
+.profile__sessiondata {
     color: black !important;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* Slightly lighter background for contrast */
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* Styling for session information (Tutor, Sessions Left, etc.) */
+.profile__sessiondata p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.profile__sessiondata p:first-child {
+    font-weight: bold;
+    font-size: 20px;
+    color: #2d2d2d;
+}
+
+/* Styling for the profile avatar (image) */
+.profile__avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+/* Flexbox for session info and profile avatar */
+.profile__info {
+    display: flex;
+    align-items: center;
+}
+
+/* Button styling for actions like Edit Profile */
+.button {
+    padding: 10px 20px;
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0044cc;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .brand__name__profile {
+        font-size: 50px;
+        margin-top: -20px;
+    }
+
+    .signup__form__profile {
+        height: auto;
+        padding: 20px;
+        margin: 0 15px;
+    }
+
+    .welcome__text__profile {
+        font-size: 24px;
+    }
+
+    .profile__sessiondata {
+        padding: 15px;
+    }
+
+    .profile__avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile__info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand__name__profile {
+        font-size: 40px;
+    }
+
+    .welcome__text__profile {
+        font-size: 20px;
+    }
+
+    .profile__sessiondata p {
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
 }

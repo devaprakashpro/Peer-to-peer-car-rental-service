@@ -6,7 +6,6 @@ import BookingForm from '../components/UI/BookingForm';
 import PaymentMethod from '../components/UI/PaymentMethod';
 import axios from 'axios';
 
-
 const CarDetails = () => {
   const { carId } = useParams();
   const [data, setData] = useState(null);
@@ -44,7 +43,7 @@ const CarDetails = () => {
 
                 <div className=" d-flex align-items-center gap-5 mb-4 mt-3">
                   <h6 className="rent__price fw-bold fs-4">
-                    ${data.hour_price}.00 / Day
+                    Rs. {data.hour_price}.00 / Day
                   </h6>
 
                   <span className=" d-flex align-items-center gap-2">

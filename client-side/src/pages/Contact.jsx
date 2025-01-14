@@ -101,10 +101,10 @@ useEffect(() => {
 
               <Form onSubmit={handleSubmit}>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Your Name" type="text" value={name} onChange={(event) => setName(event.target.value)}/>
+                  <Input placeholder="Enter Your Name" type="text" value={name} onChange={(event) => setName(event.target.value)}/>
                 </FormGroup>
                 <FormGroup className="contact__form">
-                  <Input placeholder="Email" type="email" value={email} onChange={(event) => setEmail(event.target.value)}/>
+                  <Input placeholder="Enter Your Email" type="email" value={email} onChange={(event) => setEmail(event.target.value)}/>
                 </FormGroup>
                 <FormGroup className="contact__form">
                   <textarea
@@ -126,16 +126,16 @@ useEffect(() => {
               <div className="contact__info">
                 <h6 className="fw-bold">Contact Information</h6>
                 <p className="section__description mb-0">
-                  123 El Sheikh Zayed, Cairo, Egypt
+                  Tamil Nadu, Salem
                 </p>
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="fs-6 mb-0">Phone:</h6>
-                  <p className="section__description mb-0">+1-202-555-0149</p>
+                  <p className="section__description mb-0">+91 93854 21977</p>
                 </div>
 
                 <div className=" d-flex align-items-center gap-2">
                   <h6 className="mb-0 fs-6">Email:</h6>
-                  <p className="section__description mb-0">carcoach578@gmail.com</p>
+                  <p className="section__description mb-0">info@volarent.com</p>
                 </div>
 
                 <h6 className="fw-bold mt-4">Follow Us</h6>

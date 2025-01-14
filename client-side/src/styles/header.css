@@ -1,6 +1,6 @@
 .header__top {
-    padding: 10px 0px;
-    background: #000d6b;
+    padding: 9px 0px;
+    background: #2A004E;
     color: #fff;
 }
 
@@ -30,6 +30,15 @@
     transition: 0.3s ease-in-out all;
 }
 
+.header__top__right a{
+    padding: 4px 12px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.233);
+    backdrop-filter: blur(5px);
+}
+
 .header__top__help a{
     color: #fff;
 }
@@ -41,7 +50,7 @@
 
 
 .header__top__right span{
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 /************************ Header middle *************************/
@@ -76,11 +85,18 @@
 }
   
 .header__btn {
-    background: #000d6b !important;
+    background: rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
     border: none;
     outline: none;
     border-radius: 5px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__btn:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.329);
 }
   
 .header__btn a {
@@ -88,13 +104,13 @@
     align-items: center;
     column-gap: 0.4rem;
     text-decoration: none;
-    color: #fff;
+    color: #000000;
     justify-content: end;
     font-size: 0.9rem;
 }
   
 .header__btn a:hover {
-    color: #fff;
+        color: #000000;
 }
 
 /************************ Main Navbar styles *************************/
@@ -156,7 +172,11 @@
     color: #f9a826;
 }
 
-@media only screen and (max-width: 768px) {
+.mobile-logo {
+    display: none;
+}
+
+@media only screen and (max-width: 960px) {
     .header__middle,
     .header__top__left span,
     .nav__right {
@@ -206,5 +226,21 @@
   
     .menu__active {
       display: block;
+    }
+    .header__top {
+        display: none;
+    }
+
+    .mobile-logo {
+        display: block;
+        background-color: #bba66c44;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 700;
+        font-size: 1.4rem;
+        color: black;
+        padding: 0 1rem;
     }
   }

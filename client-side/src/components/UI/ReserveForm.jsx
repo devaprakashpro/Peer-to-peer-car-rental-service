@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const ReserveForm = () => {
   return (
     <Form className="form">
-    <div className=" d-flex align-items-center justify-content-between flex-wrap">
+      <div className="d-flex align-items-center justify-content-between flex-wrap">
       <FormGroup className="form__group">
         <input type="text" placeholder="Address" required />
       </FormGroup>
@@ -16,13 +16,9 @@ const ReserveForm = () => {
       </FormGroup>
 
       <FormGroup className="form__group">
-      <input
-        className="journey__time"
-        type="time"
-        required
-      />
-
+          <input className="journey__time" type="date" required />
       </FormGroup>
+
       <FormGroup className="select__group">
         <select>
           <option value="automatic">Automatic Car</option>

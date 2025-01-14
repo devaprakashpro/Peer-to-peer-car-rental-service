@@ -1,44 +1,44 @@
 const serviceData = [
     {
       id: 1,
-      title: "City Transfer",
-      icon: "ri-map-pin-2-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Economy",
+      icon: "ri-car-line",
+      desc: "The economy package is perfect for those who want to save money and still get a good car.",
     },
   
     {
       id: 2,
-      title: "Whole  City Tour",
-      icon: "ri-community-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Premium",
+      icon: "ri-roadster-line",
+      desc: "The premium package is perfect for those who want a little more luxury and a car that is a bit more powerful.",
     },
   
     {
       id: 3,
-      title: "Unlimited Miles Car Rental",
-      icon: "ri-roadster-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Fullsize",
+      icon: "ri-taxi-line",
+      desc: "The fullsize package is perfect for those who want a car that has a lot of space and power.",
     },
   
     {
       id: 4,
-      title: "Fast & Easy Booking",
-      icon: "ri-timer-flash-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Minivan",
+      icon: "ri-bus-2-line",
+      desc: "The minivan package is perfect for those who need a car that has a lot of space and seats.",
     },
   
     {
       id: 5,
-      title: "Many Pickup Locations",
-      icon: "ri-map-pin-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Electric",
+      icon: "ri-battery-2-line",
+      desc: "The electric package is perfect for those who want to save money on gas and help the environment.",
     },
   
     {
       id: 6,
-      title: "Airport Transfer",
-      icon: "ri-flight-takeoff-line",
-      desc: "Tempor tempor sadipscing vero lorem sea, invidunt sed et eos ipsum et erat. Dolor ut duo sadipscing lorem. Gubergren gub",
+      title: "Luxury",
+      icon: "ri-motorbike-line",
+      desc: "The luxury package is perfect for those who want the best car and the most luxurious experience.",
     },
   ];
   

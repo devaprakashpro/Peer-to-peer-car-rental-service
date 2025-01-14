@@ -21,10 +21,10 @@ const HeroSlider = () => {
         <div className="slider__item slider__item-01 mt0">
         <Container>
           <div className="slider__content ">
-            <h1 className="text-light mb-4">Reserve Now and Get 50% Off</h1>
+            <h1 className="text-light mb-4">Peer To Peer Car Rental Service</h1>
 
             <button className="btn reserve__btn mt-2">
-              <Link to="/tutors">Reserve Now</Link>
+              <Link to="/cars">Book Now</Link>
             </button>
           </div>
         </Container>
@@ -33,10 +33,15 @@ const HeroSlider = () => {
       <div className="slider__item slider__item-02 mt0">
         <Container>
           <div className="slider__content ">
-            <h1 className="text-light mb-4">Reserve Now and Get 50% Off</h1>
+            <h1 className="text-light mb-4">Wide Range of Cars</h1>
+
+            <p className="text-light">
+              We provide a wide range of cars for rent, from economy to
+              luxury models.
+            </p>
 
             <button className="btn reserve__btn mt-2">
-              <Link to="/tutors">Reserve Now</Link>
+              <Link to="/cars">Book Now</Link>
             </button>
           </div>
         </Container>
@@ -45,12 +50,16 @@ const HeroSlider = () => {
       <div className="slider__item slider__item-03 mt0">
         <Container>
           <div className="slider__content ">
-            <h1 className="text-light mb-4">Reserve Now and Get 50% Off</h1>
+            <h1 className="text-light mb-4">No Credit Card Needed</h1>
+
+            <p className="text-light">
+              We don't require a credit card for booking.
+            </p>
 
             <button className="btn reserve__btn mt-2">
-              <Link to="/tutors">Reserve Now</Link>
+              <Link to="/cars">Book Now</Link>
             </button>
-          </div>
+            </div>
         </Container>
       </div>
     </Slider>

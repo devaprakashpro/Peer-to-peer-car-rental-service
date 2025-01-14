@@ -16,7 +16,8 @@ const BecomeDriverSection = () => {
 
           <Col lg="6" md="6" sm="12">
             <h2 className="section__title become__driver-title">
-              Do You Want to Earn With Us? So Don't Be Late
+              Monetize your car and earn up to 1,000 a month. We connect car
+              owners with people who need a car.
             </h2>
             <div className="earn__container">
             <Link to="/join-us" className="align-self-center">

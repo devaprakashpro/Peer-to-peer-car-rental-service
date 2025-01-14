@@ -82,6 +82,10 @@
   .booking__form select:focus {
     outline: none;
   }
+
+  textarea {
+    color: rgba(0, 0, 0, 0.842) !important;
+  }
   
   @media only screen and (max-width: 768px) {
     .booking__form {

@@ -5,7 +5,7 @@
 
 .slider__item-01 {
     background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-      url("../assets/images/slider-img/slider-1.jpg");
+      url("../assets/images/slider-img/car-img1.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +13,7 @@
 
 .slider__item-02 {
     background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-      url("../assets/images/slider-img/slider-2.jpg");
+      url("../assets/images/slider-img/car-img2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@
   
 .slider__item-03 {
     background: linear-gradient(rgb(0, 13, 107, 0.5), rgb(0, 13, 107, 0.5)),
-      url("../assets/images/slider-img/slider-3.jpg");
+      url("../assets/images/slider-img/car-img3.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

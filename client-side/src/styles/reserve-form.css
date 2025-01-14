@@ -1,15 +1,20 @@
 .find__cars-left {
-    background: linear-gradient(rgb(249, 168, 38, 0.9), rgb(249, 168, 38, 0.9)),
-      url("../assets/images/toyota-offer-2.png");
+    background: linear-gradient(rgba(219, 219, 219, 0.349), rgb(249, 168, 38, 0.9)),
+      url("../assets/images/car-img4.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 65px 35px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
   
   .find__cars-left h2 {
     font-weight: 600;
     font-size: 2.8rem;
+    color: #000d6b;
   }
   
   .form__group {
@@ -17,14 +22,17 @@
     margin-bottom: 0;
   }
   
-  .form__group input {
+  .form__group input,
+  .form__group textarea {
     border: 1px solid #7c8a972a;
     padding: 8px 12px;
     width: 100%;
     outline: none;
+    color: #000d6b;
   }
 
-  .form__group input::placeholder {
+  .form__group input::placeholder,
+  .form__group textarea::placeholder {
     color: #7c8a97;
   }
   
@@ -45,7 +53,7 @@
     padding: 10px 15px;
     border: 1px solid #7c8a972a;
     outline: none;
-    color: #7c8a97;
+    color: #000d6b;
   }
   
   .hero__slider-section {
@@ -64,6 +72,8 @@
   .form__row {
     background: #fff;
     box-shadow: 5px 5px 15px -5px #7c8a97;
+    border-radius:14px;
+    padding: 8px;
   }
   
   .journey__time::before {
@@ -80,6 +90,7 @@
     border: none;
     outline: none;
   }
+
   
   @media only screen and (max-width: 992px) {
     .find__cars-left {
