@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(()=>{
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://carcoach-apis.onrender.com/api/car-uploads-all');
+        const response = await axios.get("http://192.168.0.104:8000/api/car-uploads-all");
         setData(response.data);
       } catch (error) {
         console.error(error);

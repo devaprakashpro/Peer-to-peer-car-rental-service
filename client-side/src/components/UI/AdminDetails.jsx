@@ -14,7 +14,7 @@ const AdminDetails = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://carcoach-apis.onrender.com/api/admin/${name}`
+          `http://192.168.0.104:8000/api/admin/${name}`
         );
         setData(response);
       } catch (error) {
@@ -28,7 +28,7 @@ const AdminDetails = () => {
   const handleDelete = async (id) => {
     try {
       await axios.delete(
-        `https://carcoach-apis.onrender.com/api/admin/${name}/${id}`
+        `http://192.168.0.104:8000/api/admin/${name}/${id}`
       );
       setData((prevData) => ({
         ...prevData,

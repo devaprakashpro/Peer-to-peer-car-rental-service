@@ -49,7 +49,7 @@ const BookingForm = ({service}) => {
     try {
       const data = new FormData(event.target);
       const response = await axios.post(
-        `http://192.168.0.114:8000/api/tutors-applicants/${id}`,
+        `http://192.168.0.104:8000/api/tutors-applicants/${id}`,
         data
       );
       const responseData  = await response.data;
@@ -97,7 +97,7 @@ const BookingForm = ({service}) => {
     try {
       const data = new FormData(event.target);
       const response = await axios.post(
-        `http://192.168.0.114:8000/api/tutors-applicants/car/${tutorId}`,
+        `http://192.168.0.104:8000/api/tutors-applicants/car/${tutorId}`,
         data
       );
       const responseData  = await response.data;
@@ -140,7 +140,7 @@ const submitCarHandler = useCallback(async (event) => {
   try {
     const data = new FormData(event.target);
     const response = await axios.post(
-      `http://192.168.0.114:8000/api/car-uploads/${id ? id : ""}`,
+      `http://192.168.0.104:8000/api/car-uploads/${id ? id : ""}`,
       data
     );
     const responseData  = await response.data;
@@ -184,7 +184,7 @@ const submitTutorReservationHandler = useCallback(async (event) => {
     });
     console.log(requestData);
     const response = await axios.post(
-      `http://192.168.0.114:8000/api/tutor-reserve/${
+      `http://192.168.0.104:8000/api/tutor-reserve/${
         user_id ? user_id + "/" : ""
       }${tutor_id}`,
       requestData,
@@ -216,7 +216,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
     console.log(requestData);
     // variable id here is the tutorid
     const response = await axios.post(
-      `http://192.168.0.114:8000/api/car-rent/${
+      `http://192.168.0.104:8000/api/car-rent/${
         user_id ? user_id + "/" : ""
       }${carId}`,
       requestData,
@@ -241,39 +241,40 @@ const submitCarReservationHandler = useCallback(async (event) => {
       <>
         <Form onSubmit={submitCarReservationHandler}>
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="text" required placeholder="Enter Your Full Name" name="name"/>
+          <input type="text" required placeholder="Enter Your Full Name" name="name" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="text" required placeholder="Enter Your Address" name="address"/>
+          <input type="text" required placeholder="Enter Your Address" name="address" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="email" required placeholder="Enter Your Email" name="email" />
+          <input type="email" required placeholder="Enter Your Email" name="email" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="tel" required placeholder="Enter Your Phone Number" name="phone"/>
+          <input type="tel" required placeholder="Enter Your Phone Number" name="phone" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="text" required placeholder="Enter Pickup Location" name="pickup_location" />
+          <input type="text" required placeholder="Enter Pickup Location" name="pickup_location" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
-          <input type="text" required placeholder="Enter Return Location" name="return_location" />
+          <input type="text" required placeholder="Enter Return Location" name="return_location" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
 
         <FormGroup className="booking__form d-inline-block me-4 mb-4">
-          <input type="date" required placeholder="Select Journey Date" name="journey_date"/>
+          <input type="date" required placeholder="Select Journey Date" name="journey_date" onChange={(e) => console.log(e.target.value)}/>
         </FormGroup>
         <FormGroup className="booking__form d-inline-block mb-4">
           <input
             type="text"
             required placeholder="Enter Renting Duration"
             name="renting_period"
+            onChange={(e) => console.log(e.target.value)}
           />
         </FormGroup>
 
         <FormGroup className="booking__form textarea__tutor">
-            <select name="payment_method" id="">
+            <select name="payment_method" id="" onChange={(e) => console.log(e.target.value)}>
             <option value="cash">Cash/QR</option>
             {/* <option value="direct bank transfer">Direct Bank Transfer</option>
               <option value="mastercard">Master Card</option>
@@ -288,6 +289,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
             className="textarea"
             required placeholder="Enter Additional Details"
             name="details"
+            onChange={(e) => console.log(e.target.value)}
           ></textarea>
         </FormGroup>
         <button type="submit" className="contact__btn">
