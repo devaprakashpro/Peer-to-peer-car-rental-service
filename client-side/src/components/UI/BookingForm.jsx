@@ -48,7 +48,10 @@ const BookingForm = ({service}) => {
     event.preventDefault();
     try {
       const data = new FormData(event.target);
-      const response = await axios.post(`https://carcoach-apis.onrender.com/api/tutors-applicants/${id}`, data);
+      const response = await axios.post(
+        `http://192.168.0.114:8000/api/tutors-applicants/${id}`,
+        data
+      );
       const responseData  = await response.data;
       setResponseObject(responseData);
       console.log(responseObject);
@@ -93,7 +96,10 @@ const BookingForm = ({service}) => {
     event.preventDefault();
     try {
       const data = new FormData(event.target);
-      const response = await axios.post(`https://carcoach-apis.onrender.com/api/tutors-applicants/car/${tutorId}`, data);
+      const response = await axios.post(
+        `http://192.168.0.114:8000/api/tutors-applicants/car/${tutorId}`,
+        data
+      );
       const responseData  = await response.data;
       setResponseObject(responseData);
       console.log(responseObject);
@@ -133,7 +139,10 @@ const submitCarHandler = useCallback(async (event) => {
   event.preventDefault();
   try {
     const data = new FormData(event.target);
-    const response = await axios.post(`https://carcoach-apis.onrender.com/api/car-uploads/${id?id:""}`, data);
+    const response = await axios.post(
+      `http://192.168.0.114:8000/api/car-uploads/${id ? id : ""}`,
+      data
+    );
     const responseData  = await response.data;
     setResponseObject(responseData);
     console.log(responseObject);
@@ -174,11 +183,17 @@ const submitTutorReservationHandler = useCallback(async (event) => {
       requestData[key] = value;
     });
     console.log(requestData);
-    const response = await axios.post(`https://carcoach-apis.onrender.com/api/tutor-reserve/${user_id?user_id+"/":""}${tutor_id}`, requestData, {
-      headers: {
-        'Content-Type': 'application/json'
+    const response = await axios.post(
+      `http://192.168.0.114:8000/api/tutor-reserve/${
+        user_id ? user_id + "/" : ""
+      }${tutor_id}`,
+      requestData,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
-    });
+    );
     const responseData  = await response.data;
     setResponseObject(responseData);
     console.log(responseObject);
@@ -200,11 +215,17 @@ const submitCarReservationHandler = useCallback(async (event) => {
     });
     console.log(requestData);
     // variable id here is the tutorid
-    const response = await axios.post(`https://carcoach-apis.onrender.com/api/car-rent/${user_id?user_id+"/":""}${carId}`, requestData, {
-      headers: {
-        'Content-Type': 'application/json'
+    const response = await axios.post(
+      `http://192.168.0.114:8000/api/car-rent/${
+        user_id ? user_id + "/" : ""
+      }${carId}`,
+      requestData,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
       }
-    });
+    );
     const responseData  = await response.data;
     setResponseObject(responseData);
     console.log(responseObject);
@@ -460,7 +481,7 @@ const submitCarReservationHandler = useCallback(async (event) => {
 
               <FormGroup className="booking__form d-inline-block me-4 mb-4">
                 <input
-                  type="date"
+                  type="time"
                   required placeholder="Select Interview Time"
                   className="time__picker__join"
                   name="interview_time"

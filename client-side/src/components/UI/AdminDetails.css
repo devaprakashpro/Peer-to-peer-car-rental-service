@@ -1,0 +1,107 @@
+/* Base styles */
+.admin__data {
+    padding: 20px;
+    background-color: #f1f5f9;
+    /* Light grey background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.modern-table th,
+.modern-table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+/* Header styling with gradient */
+.modern-table th {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    /* Gradient background */
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.modern-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.modern-table tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+.modern-table tr:hover {
+    background-color: #f1f1f1;
+    /* Subtle hover effect */
+}
+
+/* Button styling */
+.delete-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.delete-btn:hover {
+    background-color: #e43f3f;
+    transform: scale(1.05);
+    /* Slight hover effect to make it interactive */
+}
+
+.delete-btn:focus {
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .modern-table th,
+    .modern-table td {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .delete-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modern-table {
+        font-size: 12px;
+    }
+
+    .delete-btn {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .modern-table th,
+    .modern-table td {
+        padding: 8px;
+    }
+}
+
+/* Add some shadow effect for the table container to make it stand out more */
+.admin__data {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
